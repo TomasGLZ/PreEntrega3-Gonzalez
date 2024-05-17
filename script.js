@@ -35,7 +35,7 @@ class Calculadora {
         const num2 = parseFloat(document.getElementById('num2').value);
 
         if (isNaN(num1) || isNaN(num2)) {
-            this.mostrarMensaje("Por favor, ingrese números válidos.");
+            this.mostrarMensaje("Por favor, ingrese numeros válidos.");
             return;
         }
 
@@ -46,17 +46,17 @@ class Calculadora {
             case "resta":
                 this.resultado = this.restar(num1, num2);
                 break;
-            case "multiplicación":
+            case "multiplicacion":
                 this.resultado = this.multiplicar(num1, num2);
                 break;
-            case "división":
+            case "division":
                 this.resultado = this.dividir(num1, num2);
                 break;
             case "porcentaje":
                 this.resultado = this.calcularPorcentaje(num1, num2);
                 break;
             default:
-                this.mostrarMensaje("Operación no válida.");
+                this.mostrarMensaje("Operacion no valida.");
                 return;
         }
 
@@ -116,9 +116,9 @@ class Calculadora {
                 return '+';
             case 'resta':
                 return '-';
-            case 'multiplicación':
+            case 'multiplicacion':
                 return '*';
-            case 'división':
+            case 'division':
                 return '/';
             case 'porcentaje':
                 return '%';
