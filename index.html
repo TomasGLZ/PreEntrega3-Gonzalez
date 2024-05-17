@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <!-- js -->
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        input, select, button {
+            margin: 10px;
+        }
+        .message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Básica</h1>
+        <div>
+            <label for="operacion">Operación:</label>
+            <select id="operacion">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multiplicación">Multiplicación</option>
+                <option value="división">División</option>
+                <option value="porcentaje">Porcentaje</option>
+            </select>
+        </div>
+        <div>
+            <label for="num1">Primer Número:</label>
+            <input type="number" id="num1">
+        </div>
+        <div>
+            <label for="num2">Segundo Número:</label>
+            <input type="number" id="num2">
+        </div>
+        <button id="calcularBtn">Calcular</button>
+        <h2 id="resultado"></h2>
+        <h3>Historial de Resultados</h3>
+        <ul id="historial"></ul>
+        <div class="message" id="message"></div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
